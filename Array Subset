@@ -1,0 +1,9 @@
+class Solution:
+    def isSubset(self, a, b):
+        set_a = set(a)
+        
+        for x in b:
+            if x not in set_a:
+                return False
+        
+        return True
